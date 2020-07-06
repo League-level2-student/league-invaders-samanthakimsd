@@ -1,9 +1,10 @@
 import java.awt.Font;
+import java.awt.Graphics;
 import java.util.Timer;
 
 import javax.swing.JPanel;
 
-public class GamePanel {
+public class GamePanel extends JPanel{
 JPanel panel = new JPanel();
 final int MENU = 0;
 final int GAME = 1;
@@ -16,7 +17,12 @@ Rocketship r = new Rocketship();
 ObjectManager om = new ObjectManager();
 GamePanel(){
 titleFont = new Font("Arial" Font.PLAIN,48);
-somethingFont = new Font
+somethingFont = new Font;
 
 }
+
+@Override
+public void paintComponent(Graphics g){
+	g.fillRect(10, 10, 100, 100);
 }
+} 
